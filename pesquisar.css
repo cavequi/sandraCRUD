@@ -1,0 +1,40 @@
+* {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(142, 212, 221);
+}
+
+h1 {
+    font-size: 3.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+form {
+    background-color: thistle;
+    width: 40%;
+    margin: auto;
+    font-size: 1.3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 25%;
+}

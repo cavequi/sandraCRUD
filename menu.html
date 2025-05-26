@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(142, 212, 221);
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .menu-container {
+            background-color: thistle;
+            width: 40%;
+            margin: auto;
+            padding: 3rem 0;
+            border: 1px solid black;
+            border-radius: 1rem;
+        }
+
+        input[type="button"] {
+            width: 10rem;
+            font-size: 1.5rem;
+            margin: 1rem;
+            padding: 0.3rem 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menu Principal</h1>
+    <div class="menu-container">
+        <input type="button" value="Cadastrar" onclick="location.href='cadastro.html'"/>
+        <br><br>
+        <input type="button" value="Listar" onclick="location.href='listar.php'"/>
+        <br><br>
+        <input type="button" value="Pesquisar" onclick="location.href='pesquisar.html'"/>
+        <br><br>
+        <input type="button" value="Atualizar" onclick="location.href='atualizar.html'"/>
+        <br><br>
+        <input type="button" value="Excluir" onclick="location.href='excluir.html'"/>
+    </div>
+</body>
+
+</html>
