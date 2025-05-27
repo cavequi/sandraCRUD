@@ -51,7 +51,7 @@
 
 <body>
     <h1>Cadastro</h1>
-    <form name="frmCadastro" action="cadastro.php" method="post">
+    <form name="frmCadastro" action="" method="post">
         <label for="txtNome">Nome: </label>
         <input type="text" name="txtNome" id="txtNome" maxlength="40" required>
         <br><br>
@@ -74,18 +74,22 @@
 
     <?php
     include 'conexao.php';
-    $nome = $_POST['txtNome'];
-    $sexo = $_POST['radSexo'];
-    $email = $_POST['txtEmail'];
-    $senha = $_POST['txtSenha'];
 
-    $cadastro = $cmd->query(query: "insert into tbprojeto(Nome, Sexo, Email, Senha) values ('$nome', '$sexo', '$email', '$senha');");
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $nome = $_POST['txtNome'];
+        $sexo = $_POST['radSexo'];
+        $email = $_POST['txtEmail'];
+        $senha = $_POST['txtSenha'];
 
-    echo "<script language='JavaScript'>
+        $cadastro = $cmd->query(query: "insert into tbprojeto(Nome, Sexo, Email, Senha) values ('$nome', '$sexo', '$email', '$senha');");
+
+        echo "<script language='JavaScript'>
             alert('Dados cadastrados com sucesso!');
-            location.href = 'cadastro.html';
-          </script>"
-        ?>
+            location.href = 'cadastrar.php';
+          </script>";
+    }
+    ?>
+
 
 </body>
 
