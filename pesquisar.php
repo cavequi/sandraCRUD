@@ -105,7 +105,7 @@
                   </tr>";
                 }
             } else {
-                echo "<script language=javascript> window.alert('Não existem registros para exibir!!!'); location.href='menu.html'; </script>";
+                echo "<script language=javascript> window.alert('Nenhum registro encontrado!!!'); location.href='pesquisar.php'; </script>";
             }
         }
         ?>

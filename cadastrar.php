@@ -85,7 +85,7 @@
 
         echo "<script language='JavaScript'>
             alert('Dados cadastrados com sucesso!');
-            location.href = 'cadastrar.php';
+            location.href = 'menu.html';
           </script>";
     }
     ?>
